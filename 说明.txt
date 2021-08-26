@@ -43,4 +43,3 @@
 CloudAMQP连接云服务器，无需配置环境即可进行实操
 本地连接的需要下载RabbitMQ所依赖的环境，配置环境变量等...
 连接CloudAMQP简单做个连接，是否成功
-网上教程：https://www.cnblogs.com/zxtceq/p/14016564.html
