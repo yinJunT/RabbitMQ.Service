@@ -1,7 +1,6 @@
 ﻿using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System;
-using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 
@@ -37,7 +36,7 @@ namespace RabbitMQ.Clients
             _channel = _connection.CreateModel();
 
             // 在访问队列之前，请确保队列存在（声明消息队列）
-            var queueName = "demo";     // 消息队列名称
+            var queueName = "test";     // 消息队列名称
             bool durable = false;       // 是否持久化,true持久化,队列会保存磁盘,服务器重启时可以保证不丢失相关信息。
             bool exclusive = false;     // 是否排他,true排他的,如果一个队列声明为排他队列,该队列仅对首次声明它的连接可见,并在连接                             断开时自动删除
             bool autoDelete = false;    // 是否自动删除。true是自动删除。自动删除的前提是：致少有一个消费者连接到这个队列，之后所                              有与这个队列连接的消费者都断开时,才会自动删除

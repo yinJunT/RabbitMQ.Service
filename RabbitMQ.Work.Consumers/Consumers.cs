@@ -5,10 +5,9 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 
-namespace RabbitMQ.Consumer
+namespace RabbitMQ.Work.Consumers
 {
-
-    class Consumer
+    public class Consumers
     {
         private IConnection _connection;
         private IModel _channel;
@@ -36,6 +35,9 @@ namespace RabbitMQ.Consumer
 
             _channel.QueueDeclare(queueName, durable, exclusive, autoDelete, null);
 
+            // prefetchCount = 1，这使用BasicQos协议方法告诉RabbitMQ一次不要给一个工人多个消息。
+            // 实现work模式，多个消费者
+            _channel.BasicQos(0,1,false);
             var consumer = new EventingBasicConsumer(_channel);
 
             // 添加消息接收事件

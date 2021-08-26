@@ -5,11 +5,50 @@ VisualStudioVersion = 17.0.31512.422
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Service", "RabbitMQ.Service\RabbitMQ.Service.csproj", "{C249358E-1A75-443B-ACEA-FA3635F40BDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Producer", "RabbitMQ.Producer\RabbitMQ.Producer.csproj", "{41418F3E-D346-4887-AC13-0A8083A4259F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Producer", "RabbitMQ.Producer\RabbitMQ.Producer.csproj", "{41418F3E-D346-4887-AC13-0A8083A4259F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Consumer", "RabbitMQ.Consumer\RabbitMQ.Consumer.csproj", "{14DD5D7C-601D-4167-AF3E-144CCA6FE347}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Consumer", "RabbitMQ.Consumer\RabbitMQ.Consumer.csproj", "{14DD5D7C-601D-4167-AF3E-144CCA6FE347}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Clients", "RabbitMQ.Clients\RabbitMQ.Clients.csproj", "{9A78E7B1-C15C-406E-BDE4-219D3DBECBE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Clients", "RabbitMQ.Clients\RabbitMQ.Clients.csproj", "{9A78E7B1-C15C-406E-BDE4-219D3DBECBE2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQ.Work.Consumers", "RabbitMQ.Work.Consumers\RabbitMQ.Work.Consumers.csproj", "{B59DDEB6-8233-4BB1-9FB2-02E6528368C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "消息队列模式介绍", "消息队列模式介绍", "{18CE86A8-37DF-41F5-B055-8A1A39176833}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\Administrator\AppData\Roaming\DingTalk\2264446436_v2\ImageFiles\1、简单队列.png = C:\Users\Administrator\AppData\Roaming\DingTalk\2264446436_v2\ImageFiles\1、简单队列.png
+		C:\Users\Administrator\AppData\Roaming\DingTalk\2264446436_v2\ImageFiles\2、工作队列.png = C:\Users\Administrator\AppData\Roaming\DingTalk\2264446436_v2\ImageFiles\2、工作队列.png
+		C:\Users\Administrator\AppData\Roaming\DingTalk\2264446436_v2\ImageFiles\3、发布,订阅.png = C:\Users\Administrator\AppData\Roaming\DingTalk\2264446436_v2\ImageFiles\3、发布,订阅.png
+		C:\Users\Administrator\AppData\Roaming\DingTalk\2264446436_v2\ImageFiles\4、路由模式.png = C:\Users\Administrator\AppData\Roaming\DingTalk\2264446436_v2\ImageFiles\4、路由模式.png
+		C:\Users\Administrator\AppData\Roaming\DingTalk\2264446436_v2\ImageFiles\5、主題模式.png = C:\Users\Administrator\AppData\Roaming\DingTalk\2264446436_v2\ImageFiles\5、主題模式.png
+		C:\Users\Administrator\AppData\Roaming\DingTalk\2264446436_v2\ImageFiles\6、RPC模式.png = C:\Users\Administrator\AppData\Roaming\DingTalk\2264446436_v2\ImageFiles\6、RPC模式.png
+		说明.txt = 说明.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "day01-简单队列(两种连接[云，本地])", "day01-简单队列(两种连接[云，本地])", "{F54C60FB-01E9-47E3-BB83-6A48C273AD21}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "day02-工作队列", "day02-工作队列", "{AC90FD57-7B29-4E9F-A67E-F83BAF6FD355}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1、连接本地", "1、连接本地", "{8013AC0F-ED44-4527-9A1B-5F2C6FE29B3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2、连接Cloudamqp", "2、连接Cloudamqp", "{A53DCEB3-899C-4C63-96E4-4DCDA9458CA4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "day03-发布，订阅", "day03-发布，订阅", "{BF130130-155F-4261-8E0A-BC477A3BA5AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exchange.Producer", "Exchange.Producer\Exchange.Producer.csproj", "{1C38B2E8-7849-4536-855E-1FC322744BC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exchange.Consumer", "Exchange.Consumer\Exchange.Consumer.csproj", "{A83644F7-9FD0-4932-A75C-131F412D1143}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "day04-路由模式", "day04-路由模式", "{82F7C142-86C6-4377-B4F5-58DD309A89D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Direct.Producer", "Direct.Producer\Direct.Producer.csproj", "{1AF7E1FA-2F0F-446C-B511-2F372E75A8B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Direct.Consumer", "Direct.Consumer\Direct.Consumer.csproj", "{3763FB0C-45CC-4CB7-9F2D-4ADC5AA70076}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "day05-主题模式", "day05-主题模式", "{26F585C5-0E2A-438A-BBF8-857A8F3DEF38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topic.Producer", "Topic.Producer\Topic.Producer.csproj", "{59C9BFE3-D166-44DF-AFC9-6169E0B37344}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topic.Consumer", "Topic.Consumer\Topic.Consumer.csproj", "{1BCBFF7F-6934-4CD7-BB85-0D6A81FEC80C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +72,52 @@ Global
 		{9A78E7B1-C15C-406E-BDE4-219D3DBECBE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A78E7B1-C15C-406E-BDE4-219D3DBECBE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A78E7B1-C15C-406E-BDE4-219D3DBECBE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B59DDEB6-8233-4BB1-9FB2-02E6528368C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B59DDEB6-8233-4BB1-9FB2-02E6528368C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B59DDEB6-8233-4BB1-9FB2-02E6528368C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B59DDEB6-8233-4BB1-9FB2-02E6528368C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C38B2E8-7849-4536-855E-1FC322744BC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C38B2E8-7849-4536-855E-1FC322744BC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C38B2E8-7849-4536-855E-1FC322744BC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C38B2E8-7849-4536-855E-1FC322744BC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A83644F7-9FD0-4932-A75C-131F412D1143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A83644F7-9FD0-4932-A75C-131F412D1143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A83644F7-9FD0-4932-A75C-131F412D1143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A83644F7-9FD0-4932-A75C-131F412D1143}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AF7E1FA-2F0F-446C-B511-2F372E75A8B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AF7E1FA-2F0F-446C-B511-2F372E75A8B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AF7E1FA-2F0F-446C-B511-2F372E75A8B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AF7E1FA-2F0F-446C-B511-2F372E75A8B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3763FB0C-45CC-4CB7-9F2D-4ADC5AA70076}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3763FB0C-45CC-4CB7-9F2D-4ADC5AA70076}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3763FB0C-45CC-4CB7-9F2D-4ADC5AA70076}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3763FB0C-45CC-4CB7-9F2D-4ADC5AA70076}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59C9BFE3-D166-44DF-AFC9-6169E0B37344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59C9BFE3-D166-44DF-AFC9-6169E0B37344}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59C9BFE3-D166-44DF-AFC9-6169E0B37344}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59C9BFE3-D166-44DF-AFC9-6169E0B37344}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BCBFF7F-6934-4CD7-BB85-0D6A81FEC80C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BCBFF7F-6934-4CD7-BB85-0D6A81FEC80C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BCBFF7F-6934-4CD7-BB85-0D6A81FEC80C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BCBFF7F-6934-4CD7-BB85-0D6A81FEC80C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C249358E-1A75-443B-ACEA-FA3635F40BDB} = {8013AC0F-ED44-4527-9A1B-5F2C6FE29B3F}
+		{41418F3E-D346-4887-AC13-0A8083A4259F} = {AC90FD57-7B29-4E9F-A67E-F83BAF6FD355}
+		{14DD5D7C-601D-4167-AF3E-144CCA6FE347} = {A53DCEB3-899C-4C63-96E4-4DCDA9458CA4}
+		{9A78E7B1-C15C-406E-BDE4-219D3DBECBE2} = {8013AC0F-ED44-4527-9A1B-5F2C6FE29B3F}
+		{B59DDEB6-8233-4BB1-9FB2-02E6528368C7} = {AC90FD57-7B29-4E9F-A67E-F83BAF6FD355}
+		{8013AC0F-ED44-4527-9A1B-5F2C6FE29B3F} = {F54C60FB-01E9-47E3-BB83-6A48C273AD21}
+		{A53DCEB3-899C-4C63-96E4-4DCDA9458CA4} = {F54C60FB-01E9-47E3-BB83-6A48C273AD21}
+		{1C38B2E8-7849-4536-855E-1FC322744BC1} = {BF130130-155F-4261-8E0A-BC477A3BA5AF}
+		{A83644F7-9FD0-4932-A75C-131F412D1143} = {BF130130-155F-4261-8E0A-BC477A3BA5AF}
+		{1AF7E1FA-2F0F-446C-B511-2F372E75A8B6} = {82F7C142-86C6-4377-B4F5-58DD309A89D8}
+		{3763FB0C-45CC-4CB7-9F2D-4ADC5AA70076} = {82F7C142-86C6-4377-B4F5-58DD309A89D8}
+		{59C9BFE3-D166-44DF-AFC9-6169E0B37344} = {26F585C5-0E2A-438A-BBF8-857A8F3DEF38}
+		{1BCBFF7F-6934-4CD7-BB85-0D6A81FEC80C} = {26F585C5-0E2A-438A-BBF8-857A8F3DEF38}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4F69002A-5B4B-491C-B92B-D683540A0A88}

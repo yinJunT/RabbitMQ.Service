@@ -24,7 +24,7 @@ namespace RabbitMQ.Producer
             using var channel = connection.CreateModel();
 
             // 4、在发布队列之前，请确保队列存在（创建队列）
-            var queueName = "xtqueue2";
+            var queueName = "xtqueue";
             channel.QueueDeclare(
                     queue: queueName,          // 消息队列的名称
                     durable: false,            // 是否持久化,true持久化队列会保存磁盘,服务器重启时可以保证不丢失相关信息

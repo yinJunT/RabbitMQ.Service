@@ -1,0 +1,2 @@
+找到项目文件  RabbitMQ.Service\RabbitMQ.Work.Consumers\bin\Debug\netcoreapp3.1>
+输入cmd运行启用多个消费者同时消费：RabbitMQ.Work.Consumers dotnet
